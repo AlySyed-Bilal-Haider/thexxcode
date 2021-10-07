@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission open in Web development</title>
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-asom/css/all.css">
+  
+         <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        body{
+            background-color: rgb(238, 232, 232);
+            height: auto;
+        }
+ header{
+     width: 100%;
+     height: 120px;
+     background-color:white;
+     position: absolute;
+     margin-top: -2300px !important;
+
+ }
+ header nav {
+     float: right;
+     margin-right: 60px;
+     margin-top: -50px;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+ }
+ header nav a{
+     text-decoration: none;
+     padding: 10px;
+     color: black;
+ }
+ header nav a:hover{
+     color:lightcoral;
+ }
+ header .img-box {
+     width: 50px;
+     height: 50px;
+     margin: 20px;
+ }
+ .header .img-box img{
+    width: 50px;
+     height: 50px;
+ }
+ .header .img-box img{
+    width: 50px;
+     height: 50px;
+ }
+ .main-container{
+     width: 90%;
+    min-height: auto;    
+     position: absolute;
+     top:320px;
+     left: 50%;
+     margin-top: 920px;
+     transform: translate(-50%,-50%);
+     background-color: white;
+     background-attachment: fixed;
+ }
+ .main-container .banner_box{ width: 90%;
+ height: 500px; background-image: url('img/banner.jpeg'); background-repeat: no-repeat;
+ background-size: 100% 500px;
+ position: relative;
+ top:330px;
+ left:50%;
+ transform: translate(-50%,-50%); }
+ .main-container h1,marquee { position: relative; top: 80px; margin-left: 80px; color:#e9224a; line-height: 50px;}
+ .main-container marquee{ padding: 50px 0px 50px 0px; font-size: 26px; font-weight: bolder; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+ .list_bar{
+     margin: 100px 0px 0px 120px;
+     font-size: 18px;
+ }
+ ::marker{color:#e9224a; }
+ ::selection { color:white; background-color: #e9224a;}
+ .form{
+     width: 80%;
+     height: auto;
+     position: relative;
+     top:545px;
+     left:50%;
+     transform: translate(-50%,-50%);
+ }
+ input[type='text'],input[type='email'],input[type='tel'],textarea,select{
+    width: 100%;
+    padding: 18px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background-color: rgb(245, 244, 244);
+   
+ }
+input[type='radio']
+{
+    margin-left: 5px;
+}
+textarea:focus,select:focus {
+    border: 2px solid #e9224a;
+}
+input[type='text']:focus,input[type='email']:focus,input[type='tel']:focus{  border: 2px solid #e9224a;}
+::placeholder { font-size: 16px;}
+ input[type='submit'] {
+    background-color:#e9224a; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type='submit']:hover
+{
+    background-color: black;
+}
+.form .label { font-size: 18px; color: black;}
+input,select,textarea,.label{ margin-top:40px;}
+span{ color:black; margin-left: 5px; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+footer
+ {
+     background-image: url('img/footer.png');
+     background-position:center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 400px;
+     background-color: rgba(#2B354F,0px,0px,0.5);
+     margin-top: 2300px;
+ }
+ footer .join-community
+ {
+     width: 60%;
+     height: 100%;
+     position: relative;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    
+    
+ }
+ footer .join-community span{
+     width: 150;
+     padding: 5px;
+     display: inline-block;
+     background-color: rgb(230, 221, 221);
+     background-color: r;
+     text-align: center;
+     position: relative;
+     margin-left: 35%;
+     top:27%;
+     border-radius: 2px;
+ }
+ footer .join-community .join{
+     width: 100%;
+     height: 60%;
+     position: relative;
+     top:60%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .join h2 {
+     font-size: 50px;
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .join-icon .icones-list
+ {
+    width: 55px;
+     height: 55px;
+     background-color: #2282e2;
+     border-radius: 50%;
+     display: inline-block;
+     text-align: center;
+     padding: 8px;
+     margin-top: 10px;
+     margin-left: 5px;
+ }
+ .icones-list i{
+     margin-left: -5px;
+     margin-top: 5px;
+     font-size: 30px;
+ }
+ .footer-bar{
+     width: 100%;
+     height: 100px;
+     background-color: white;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="img-box">
+            <img src="img/logo.png">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="cource.html">Cources</a>
+            <a href="#">Apply Now</a>
+        </nav>
+    </header>
+    <div class="main-container">
+      <div class="banner_box">
+ </div><br><br><br><br>
+ <h1 style="margin-top: 10px;"> Admission Open for Website Development Course
+</h1>
+<marquee>Last Date is 21st May, 2021</marquee>
+<div class=" list_bar">
+    <ol>
+        <li>This Admission form is for registration only.</li>
+        <li>Based on this data your voucher will be given to you.</li>
+        <li>It is compulsory to fill every field. Please fill this form in English using Block Letters.</li>
+    </ol>
+    <h2 style="margin-top: 25px; margin-left: -30px; color:#e9224a">Course Registration Form</h2>
+</div>
+ 
+    <form action="" method="" class="form">
+        <label class="label"><b>*Full Name</b></label><br>
+        <input type="text" name="name" placeholder="Please Enter your Full Nmae"><br>
+        <label class="label"><b>*Father Name</b></label><br>
+        <input type="text" name="name" placeholder="Please Enter Father Name"><br>
+        <label class="label"><b>*CNIC</b></label><br>
+        <input type="text" name="name" placeholder="Please Enter your cnic"><br>
+        <label class="label"><b>*Gender</b></label>
+        <input type="radio" name="name"><span>male</span></input>
+        <input type="radio" name="name"><span>female</span></input><br><br>
+        <label class="label"><b>*Email</b></label><br>
+        <input type="email" name="name" placeholder="Please Enter your email"><br>
+        <label class="label"><span>*Phone Number</span></label><br>
+        <input type="tel" name="name" placeholder="Please Enter your phone number"><br>
+        <label class="label"><b>Father profession</b></label>
+        <input type="radio" name="name"><span>Employee</span> </input>
+        <input type="radio" name="name"><span> Sector Employee</span></input>
+        <input type="radio" name="name"><span>Self Employedspan</span> </input>
+        <input type="radio" name="name"><span>Farmer</span> </input>
+        <input type="radio" name="name"><span>Labor</span>  </input>
+        <input type="radio" name="name"><span>Others</span> </input><br><br>
+        <label class="label"><b>*Select Cource</b></label><br>
+        <select>
+            <option>Graphic designing</option>
+            <option>Web development</option>
+            <option>Wordpress</option>
+            <option>SEO</option>
+            <option>C++/OPP</option>
+            <option>Ms office</option>
+        </select>  
+    </input><br>
+    <label class="label"><b>*Address</b></label><br>
+    <textarea placeholder=""></textarea><br>
+    <label class="label"><b>*Current School/College/Institute<b></label><br>
+    <textarea placeholder="Enter your school/college/institute name"></textarea> <br>
+    <input type="submit" value="submit"><br><br>
+    </form>
+     </div>
+     <footer>
+        <div class="join-community">
+            <span>STAY UP TO DATE</span>
+         <div class="join">
+         <h2>Join Our Community</h2>
+         <div class="join-icon">
+            <div class="icones-list">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="icones-list">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-aws" style="margin-left: 0px;"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            </div></div>
+         </div>
+        </div>
+        </footer>
+        <div class="footer-bar">
+        <span style="float: left;margin-top: 4%; margin-left: 160px;">Copyright © 2021 TheXXCODE IT Solutions</span>
+        <span style="float: right;margin-top: 4%; margin-right: 160px;">Powered by TheXXCODE IT Solutions</span>
+        </div>
+   
+</body>
+</html>

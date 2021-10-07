@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-asom/css/all.css">
+    <title>Services</title>
+    <style>
+           *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        ::marker{color:#e9224a; }
+ ::selection { color:white; background-color: #e9224a;}
+ header{
+     width: 100%;
+     height: 120px;
+     background-color:white;
+     position: fixed;
+     margin-top: 0px !important;
+position: absolute;
+ }
+ header nav {
+     float: right;
+     margin-right: 60px;
+     margin-top: -50px;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+ }
+ header nav a{
+     text-decoration: none;
+     padding: 10px;
+     color: black;
+ }
+ header nav a:hover{
+     color:lightcoral;
+ }
+ header .img-box {
+     width: 50px;
+     height: 50px;
+     margin: 20px;
+ }
+ .header .img-box img{
+    width: 50px;
+     height: 50px;
+ }
+ .main-container{
+     width: 100%;
+     height: 600px;
+     background-image: url('img/backimg.jpg');
+     object-fit: cover;
+     background-repeat: no-repeat;
+     background-size: 100% 600px;
+ }
+ .main{
+     width: 100%;
+     height: 300px;
+      display: grid;
+     grid-template-columns: repeat(3,25%);
+     grid-template-rows: 80%;
+     grid-column-gap: 20px;
+     justify-content: center;
+     background-color: rgb(247, 247, 247);
+ }
+ .items { padding: 2px;}
+ .main .items{ background-color: white;
+ box-shadow: 10px 10px 10px solid lightgray,-5px -5px -5px solid lightgray;
+ margin-top: 60px;}
+ .mobile { width: 100%; height: 350px; background-image: url('img/mobile.jpg'); 
+ background-repeat: no-repeat; background-size: 100% 353px; 
+  text-align: center;}
+ .main2{
+    width: 100%;
+     height: 600px;
+      display: grid;
+     grid-template-columns: repeat(3,25%);
+     grid-template-rows: repeat(3,45%);
+     grid-row-gap: 10px;
+     grid-column-gap: 30px;
+     justify-content: center;
+     background-color: rgb(247, 247, 247);
+     border-bottom: 2px solid lavender;
+ }
+ .main2 .items {  background-color: white;
+ box-shadow: 10px 10px 10px solid lightgray,-5px -5px -5px solid lightgray;
+ margin-top: 60px;}
+ .digital {
+    width: 100%;
+     height: 600px;
+      display: grid;
+     grid-template-columns: repeat(3,25%);
+     grid-template-rows: repeat(3,45%);
+     grid-row-gap: 10px;
+     grid-column-gap: 30px;
+     justify-content: center;
+     background-color: rgb(247, 247, 247);
+     border-bottom: 2px solid lavender;
+ }
+ .items { text-align: center;}
+ .items span,.items p{ color: #e9224a; font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: bold;}
+ .items p{ color: black; font-weight: normal;}
+ .items p{ margin-top: 20px;}
+ .items span { margin-top: 20px !important; display: block;}
+ /* .mobile h1{ display: inline-block; margin-top: 100px; color: white; font-size: 46px;  
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;} */
+ .market{
+     width: 100%;
+     height: 100px;
+   
+     text-align: center;
+     text-transform: uppercase;
+     background-color: rgb(247, 247, 247);
+ }
+ .digital .items{
+    background-color: white;
+ box-shadow: 10px 10px 10px solid lightgray,-5px -5px -5px solid lightgray;
+ margin-top: 60px;
+ }
+ .digital .item1,.digital .item4,.main .item1{ border-top:2px solid black;}
+ .digital .item2,.digital .item5,.main .item2{ border-top:2px solid rgb(216, 24, 24);}
+ .digital .item3,.digital .item6,.main .item3{ border-top:2px solid rgb(66, 24, 216);}
+ .items{ border-radius: 5px;}
+ .market h1{ color:#4022e9; display: inline-block;margin-top: 30px;}
+ footer
+ {
+     background-image: url('img/footer.png');
+     background-position:center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 400px;
+     background-color: rgba(#2B354F,0px,0px,0.5)
+ }
+ footer .join-community
+ {
+     width: 60%;
+     height: 100%;
+     position: relative;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    
+    
+ }
+ footer .join-community span{
+     width: 150;
+     padding: 5px;
+     display: inline-block;
+     background-color: rgb(230, 221, 221);
+     background-color: r;
+     text-align: center;
+     position: relative;
+     margin-left: 35%;
+     top:27%;
+     border-radius: 2px;
+ }
+ footer .join-community .join{
+     width: 100%;
+     height: 60%;
+     position: relative;
+     top:60%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .join h2 {
+     font-size: 50px;
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .join-icon .icones-list
+ {
+    width: 55px;
+     height: 55px;
+     background-color: #2282e2;
+     border-radius: 50%;
+     display: inline-block;
+     text-align: center;
+     padding: 8px;
+     margin-top: 10px;
+     margin-left: 5px;
+ }
+ .icones-list i{
+     margin-left: -5px;
+     margin-top: 5px;
+     font-size: 30px;
+ }
+ .icones-list:hover { cursor: pointer;}
+ .footer-bar{
+     width: 100%;
+     height: 100px;
+     background-color: white;
+ }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="img-box">
+            <img src="img/logo.png">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="cource.html">Cources</a>
+            <a href="applynow.html">Apply Now</a>
+        </nav>
+    </header>
+    <div class="main-container">
+
+    </div>
+  <div class="main">
+      <div class="item1 items" style="border: none;"><span>WORDPRESS</span>
+    <p>Ut amet, risus aliquam sapien amet porta magna quam dictum arcu magna et dolor diam ultricies.</p></div>
+      <div class="item2 items" style="border: none;"><span>ECOMMERCE & SHOPIFY</span>
+    <p>Enim nec sed suspendisse tempus ultrices posuere elementum nulla viverra vel sed odio orci duis ipsum.</p></div>
+      <div class="item3 items" style="border: none;"><span>PHP & LARAVEL</span>
+    <p>Sed elit auctor aenean ut arcu congue lacus quis viverra augue turpis vivamus in commodo dui.</p></div>
+  </div>
+  <div class="mobile">
+<!-- <h1>Mobile Apps & Desktop Apps </h1> -->
+</div>
+<div class="main2">
+    <div class="item1 items"><span>E-commerce App</span>
+    <p>Ut amet, risus aliquam sapien amet porta magna quam dictum arcu magna et dolor diam ultricies.</p></div>
+    <div class="item2 items"><span>Android App</span>
+    <p>Enim nec sed suspendisse tempus ultrices posuere elementum nulla viverra vel sed odio orci duis ipsum.</p></div>
+    <div class="item3 items"><span>Flutter Development</span>
+    <p>Enim nec sed suspendisse tempus ultrices posuere elementum nulla viverra vel sed odio orci duis ipsum.</p></div>
+    <div class="item4 items"><span>Managemnt System</span>
+    <p>Ut amet, risus aliquam sapien amet porta magna quam dictum arcu magna et dolor diam ultricies.</p></div>
+    <div class="item5 items"><span>ENVENTORY SYSTEMS</span>
+    <p>Enim nec sed suspendisse tempus ultrices posuere elementum nulla viverra vel sed odio orci duis ipsum.</p></div>
+    <div class="item6 items"><span>Asp.Network</span>
+    <p>Sed elit auctor aenean ut arcu congue lacus quis viverra augue turpis vivamus in commodo dui.</p></div>
+</div>
+<div class="market">
+    <h1>Digital Marketing</h1>
+    </div>
+<div class="digital">
+    <div class="item1 items"><span>SEO</span>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam sam. Tellus integer.</p></div>
+    <div class="item2 items"><span>Pay Per Click</span>
+    <p>Mauris sit amet massa vitae tortor condimentum lacinia quis. Tellus integer feugiat scelerisque varius morbi eni.</p></div>
+    <div class="item3 items" ><span>SMM & SEM</span>
+    <p>Portisout perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam sam. Tellus integer.​</p></div>
+    <div class="item4 items"><span>Amazon EC2</span>
+        <p>Portisout perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam sam. Tellus integer.</p>
+    </div>
+    <div class="item5 items"><span>Amazon RDS</span><p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam sam. Tellus integer.
+    </p></div>
+    <div class="item6 items "><span>Amazon RDS</span>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam sam. Tellus integer.</p></div>
+</div>
+<div class="market">
+    <h1>Graphic Designing</h1>
+    </div>
+<div class="main">
+    <div class="item1 items" ><span>ADOBE PHOTOSHOP</span>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam sam. Tellus integer.</p></div>
+    <div class="item2 items"><span>ADOBE ILLUSTRATOR</span>
+    <p>Mauris sit amet massa vitae tortor condimentum lacinia quis. Tellus integer feugiat scelerisque varius morbi eni.</p></div>
+    <div class="item3 items" ><span>PREMIERE PRO</span>
+    <p>Portisout perspiciatis unde omnis iste natus error sit laudantium, totam sam. Tellus integer.​</p></div>
+</div>
+<footer>
+    <div class="join-community">
+        <span>STAY UP TO DATE</span>
+     <div class="join">
+     <h2>Join Our Community</h2>
+     <div class="join-icon">
+        <div class="icones-list">
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="icones-list">
+            <i class="fab fa-twitter-square"></i>
+        </div>
+        <div class="icones-list">
+            <i class="far fa-envelope"></i>
+        </div>
+        <div class="icones-list">
+            <i class="fab fa-aws" style="margin-left: 0px;"></i>
+        </div>
+        <div class="icones-list">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        </div></div>
+     </div>
+    </div>
+    </footer>
+    <div class="footer-bar">
+    <span style="float: left;margin-top: 4%; margin-left: 160px;">Copyright © 2021 TheXXCODE IT Solutions</span>
+    <span style="float: right;margin-top: 4%; margin-right: 160px;">Powered by TheXXCODE IT Solutions</span>
+    </div>
+</body>
+</html>

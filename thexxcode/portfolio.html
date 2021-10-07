@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-asom/css/all.css">
+    <title>Portfolio</title>
+    <style>
+                *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        ::marker{color:#e9224a; }
+ ::selection { color:white; background-color: #e9224a;}
+ header{
+     width: 100%;
+     height: 120px;
+     background-color:white;
+     position: fixed;
+     margin-top: 0px !important;
+position: absolute;
+ }
+ header nav {
+     float: right;
+     margin-right: 60px;
+     margin-top: -50px;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+ }
+ header nav a{
+     text-decoration: none;
+     padding: 10px;
+     color: black;
+ }
+ header nav a:hover{
+     color:lightcoral;
+ }
+ header .img-box {
+     width: 50px;
+     height: 50px;
+     margin: 20px;
+ }
+ .header .img-box img{
+    width: 50px;
+     height: 50px;
+ }
+ .main-container{
+     width: 100%;
+     height: 490px;
+     background-image: url('img/portfolio.jpg');
+     background-position: center center;
+     background-size: cover;
+     
+ }
+ .main{
+     width: 100%;
+     height: 1000px;
+     display: grid;
+     grid-template-columns:repeat(3,25%) ;
+     grid-template-rows: repeat(2,470px);
+     grid-gap: 20px;
+     background-color: wh;
+     justify-content: center;
+ }
+ .items img { width: 100%; height: 300px;}
+  .items{ background-color: white;
+ box-shadow: 8px 8px 10px  rgb(240, 231, 231),-8px -8px 10px  rgb(236, 231, 231);
+ margin-top: 60px;}
+ .items span { color: #e9224a; margin-top: 10px; margin-left: 10px; display: inline-block;}
+ .items p{ margin-top: 10px; display: inline-block; margin-left: 10px;}
+ footer
+ {
+     background-image: url('img/footer.png');
+     background-position:center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 400px;
+     background-color: rgba(#2B354F,0px,0px,0.5)
+ }
+ footer .join-community
+ {
+     width: 60%;
+     height: 100%;
+     position: relative;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    
+    
+ }
+ footer .join-community span{
+     width: 150;
+     padding: 5px;
+     display: inline-block;
+     background-color: rgb(230, 221, 221);
+     background-color: r;
+     text-align: center;
+     position: relative;
+     margin-left: 35%;
+     top:27%;
+     border-radius: 2px;
+ }
+ footer .join-community .join{
+     width: 100%;
+     height: 60%;
+     position: relative;
+     top:60%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+ }
+ .join h2 {
+     font-size: 50px;
+     color: white;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ .join-icon .icones-list
+ {
+    width: 55px;
+     height: 55px;
+     background-color: #2282e2;
+     border-radius: 50%;
+     display: inline-block;
+     text-align: center;
+     padding: 8px;
+     margin-top: 10px;
+     margin-left: 5px;
+ }
+ .icones-list i{
+     margin-left: -15px;
+     font-size: 30px;
+ }
+ .footer-bar{
+     width: 100%;
+     height: 100px;
+     background-color: white;
+ }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="img-box">
+            <img src="img/logo.png">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="cource.html">Cources</a>
+            <a href="applynow.html">Apply Now</a>
+        </nav>
+    </header>
+    <div class="main-container">
+
+    </div>
+    <div class="main">
+        <div class="items1 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+        <div class="items2 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+        <div class="items3 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+        <div class="items4 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+        <div class="items5 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+        <div class="items6 items">
+            <img src="img/work-floor.jpg">
+            <span>Project Name</span>
+            <p>This is a short description elaborating the service you have mentioned above.​​</p>
+        </div>
+    </div>
+    <div class="main-container">
+
+    </div>
+    <footer>
+        <div class="join-community">
+            <span>STAY UP TO DATE</span>
+         <div class="join">
+         <h2>Join Our Community</h2>
+         <div class="join-icon">
+            <div class="icones-list">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="icones-list">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-aws" style="margin-left: 0px;"></i>
+            </div>
+            <div class="icones-list">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            </div></div>
+         </div>
+        </div>
+        </footer>
+        <div class="footer-bar">
+        <span style="float: left;margin-top: 4%; margin-left: 160px;">Copyright © 2021 TheXXCODE IT Solutions</span>
+        <span style="float: right;margin-top: 4%; margin-right: 160px;">Powered by TheXXCODE IT Solutions</span>
+        </div>
+</body>
+</html>
